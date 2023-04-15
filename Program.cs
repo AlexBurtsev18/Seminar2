@@ -47,21 +47,37 @@
 
 // Task 4. Напишите программу, которая принимает на вход число N и проверяет, кратно ли оно одновременно a и b.
 
-bool Even(int num1, int num2, int arg)
+// bool Even(int num1, int num2, int arg)
+// {
+//     if(arg % num1 == 0 && arg % num2 == 0)
+//         return true;    
+//     else
+//         return false;
+// }
+
+// Console.WriteLine("Введите проверочное число: ");
+// int arg = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите первое число: ");
+// int num1 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите второе число: ");
+// int num2 = Convert.ToInt32(Console.ReadLine());
+// bool result = Even(num1, num2, arg);
+// Console.WriteLine(result);
+
+// Task 5++. Напишите программу, которая принимает на вход два числа и проверяет, 
+// является ли одно число квадратом второго.
+
+bool Check(int num1, int num2)
 {
-    if(arg % num1 == 0 && arg % num2 == 0)
-        return true;    
+    if(num1 == num2 * num2 || num2 == num1 * num1)
+        return true;
     else
         return false;
 }
 
-Console.WriteLine("Введите проверочное число: ");
-int arg = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите первое число: ");
 int num1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите второе число: ");
 int num2 = Convert.ToInt32(Console.ReadLine());
-bool result = Even(num1, num2, arg);
+bool result = Check(num1, num2);
 Console.WriteLine(result);
-
-// task 5. Напишите программу, которая принимает на вход два числа и проверяет, является ли одно число квадратом второго.
