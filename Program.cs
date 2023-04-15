@@ -29,23 +29,39 @@
 // является ли второе число кратным первому.
 //bool
 
-bool Even(int num1, int num2)
+// bool Even(int num1, int num2)
+// {
+//     if(num2 % num1 == 0)
+//         return true;    
+//     else
+//         return false;
+// }
+
+// Console.WriteLine("Введите первое число: ");
+// int num1 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите второе число: ");
+// int num2 = Convert.ToInt32(Console.ReadLine());
+// bool result = Even(num1, num2);
+// Console.WriteLine(result);
+
+
+// Task 4. Напишите программу, которая принимает на вход число N и проверяет, кратно ли оно одновременно a и b.
+
+bool Even(int num1, int num2, int arg)
 {
-    if(num2 % num1 == 0)
+    if(arg % num1 == 0 && arg % num2 == 0)
         return true;    
     else
         return false;
 }
 
+Console.WriteLine("Введите проверочное число: ");
+int arg = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите первое число: ");
 int num1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите второе число: ");
 int num2 = Convert.ToInt32(Console.ReadLine());
-bool result = Even(num1, num2);
+bool result = Even(num1, num2, arg);
 Console.WriteLine(result);
-
-
-// Task 4. Напишите программу, которая принимает на вход число N и проверяет, кратно ли оно одновременно a и b.
-
 
 // task 5. Напишите программу, которая принимает на вход два числа и проверяет, является ли одно число квадратом второго.
