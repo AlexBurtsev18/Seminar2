@@ -25,8 +25,24 @@
 // Console.WriteLine($"First number of {randNumber} is {firstNum}");
 
 
-// Task 3. Напишите программу, которая будет принимать на вход два числа и выводить,
+// Task 3+. Напишите программу, которая будет принимать на вход два числа и выводить,
 // является ли второе число кратным первому.
+//bool
+
+bool Even(int num1, int num2)
+{
+    if(num2 % num1 == 0)
+        return true;    
+    else
+        return false;
+}
+
+Console.WriteLine("Введите первое число: ");
+int num1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите второе число: ");
+int num2 = Convert.ToInt32(Console.ReadLine());
+bool result = Even(num1, num2);
+Console.WriteLine(result);
 
 
 // Task 4. Напишите программу, которая принимает на вход число N и проверяет, кратно ли оно одновременно a и b.
