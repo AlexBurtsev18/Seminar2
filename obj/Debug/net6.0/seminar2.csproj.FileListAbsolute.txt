@@ -1,0 +1,15 @@
+E:\GitEducation\C#\seminar2\obj\Debug\net6.0\seminar2.csproj.AssemblyReference.cache
+E:\GitEducation\C#\seminar2\obj\Debug\net6.0\seminar2.GeneratedMSBuildEditorConfig.editorconfig
+E:\GitEducation\C#\seminar2\obj\Debug\net6.0\seminar2.AssemblyInfoInputs.cache
+E:\GitEducation\C#\seminar2\obj\Debug\net6.0\seminar2.AssemblyInfo.cs
+E:\GitEducation\C#\seminar2\obj\Debug\net6.0\seminar2.csproj.CoreCompileInputs.cache
+E:\GitEducation\C#\seminar2\bin\Debug\net6.0\seminar2.exe
+E:\GitEducation\C#\seminar2\bin\Debug\net6.0\seminar2.deps.json
+E:\GitEducation\C#\seminar2\bin\Debug\net6.0\seminar2.runtimeconfig.json
+E:\GitEducation\C#\seminar2\bin\Debug\net6.0\seminar2.dll
+E:\GitEducation\C#\seminar2\bin\Debug\net6.0\seminar2.pdb
+E:\GitEducation\C#\seminar2\obj\Debug\net6.0\seminar2.dll
+E:\GitEducation\C#\seminar2\obj\Debug\net6.0\refint\seminar2.dll
+E:\GitEducation\C#\seminar2\obj\Debug\net6.0\seminar2.pdb
+E:\GitEducation\C#\seminar2\obj\Debug\net6.0\seminar2.genruntimeconfig.cache
+E:\GitEducation\C#\seminar2\obj\Debug\net6.0\ref\seminar2.dll
