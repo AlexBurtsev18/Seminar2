@@ -67,17 +67,33 @@
 // Task 5++. Напишите программу, которая принимает на вход два числа и проверяет, 
 // является ли одно число квадратом второго.
 
-bool Check(int num1, int num2)
-{
-    if(num1 == num2 * num2 || num2 == num1 * num1)
-        return true;
-    else
-        return false;
-}
+// bool Check(int num1, int num2)
+// {
+//     if(num1 == num2 * num2 || num2 == num1 * num1)
+//         return true;
+//     else
+//         return false;
+// }
 
-Console.WriteLine("Введите первое число: ");
-int num1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите второе число: ");
-int num2 = Convert.ToInt32(Console.ReadLine());
-bool result = Check(num1, num2);
-Console.WriteLine(result);
+// Console.WriteLine("Введите первое число: ");
+// int num1 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите второе число: ");
+// int num2 = Convert.ToInt32(Console.ReadLine());
+// bool result = Check(num1, num2);
+// Console.WriteLine(result);
+
+
+// Homework. Lesson 2.
+// Task 10++. Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает
+// вторую цифру этого числа.
+
+int CutNumber(int num)
+{
+    int decade = num / 10;
+    int arg = decade % 10;
+    return arg;
+}
+Console.WriteLine("Введите число: ");
+int num = Convert.ToInt32(Console.ReadLine());
+int shortNumber = CutNumber(num);
+Console.WriteLine(shortNumber);
