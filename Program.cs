@@ -87,13 +87,83 @@
 // Task 10++. Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает
 // вторую цифру этого числа.
 
-int CutNumber(int num)
+// int CutNumber(int num)
+// {
+//     int decade = num / 10;
+//     int arg = decade % 10;
+//     return arg;
+// }
+// Console.WriteLine("Введите число: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// int shortNumber = CutNumber(num);
+// Console.WriteLine(shortNumber);
+
+//  Task 13. Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
+
+// int Number(int num)
+// {
+//     while(num > 999)
+//     {
+//         num = num / 10;
+//     }
+//     int arg = num % 10;
+//     return arg;
+// }
+// bool ValidateNumber(int num)
+// {
+//     if(num < 100)
+//     {
+//         Console.WriteLine("Третьей цифры нет");
+//         return false;
+//     }
+//     return true;
+// }
+
+// Console.WriteLine("Input your number: ");
+// int currentNumber = Convert.ToInt32(Console.ReadLine());
+// int number = Number(currentNumber);
+// Console.WriteLine(number);
+
+
+// Task 15. Напишите программу, которая принимает на вход цифру, обозначающую день недели,
+// и проверяет, является ли этот день выходным.
+
+int Prompt(string message)
 {
-    int decade = num / 10;
-    int arg = decade % 10;
-    return arg;
+    Console.WriteLine(message);
+    string value = Console.ReadLine();
+    int result = Convert.ToInt32(value);
+    return result;
 }
-Console.WriteLine("Введите число: ");
-int num = Convert.ToInt32(Console.ReadLine());
-int shortNumber = CutNumber(num);
-Console.WriteLine(shortNumber);
+
+bool IsWeekend(int weekend)
+{
+    if(weekend > 5)
+    {
+        return true;
+    }
+    return false;
+}
+
+bool ValidateWeekDay(int number)
+{
+    if(number > 0 && number <= 7)
+    {
+    return true;
+    }
+    Console.WriteLine("Это не день недели!");
+    return false;
+}
+
+int weekDay = Prompt("Введите день недели");
+if (ValidateWeekDay(weekDay))
+{
+    if(IsWeekend(weekDay))
+    {
+        Console.WriteLine("Выходной!!!");
+    }
+    else
+    {
+        Console.WriteLine("Не выходной. Работаем!");
+    }
+}
